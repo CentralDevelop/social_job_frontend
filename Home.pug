@@ -22,5 +22,14 @@ html(lang="en")
                     i#burger-menu.burger-button
                         img(src="Assets/icon-hamburger.svg", alt="Abrir Menu Movil").Icono-burger
                         img(src="Assets/icon-close.svg", alt="Cerrar Menu Movil").Icono-close
-    script(src="JS/index.js")
+        script(src="JS/index.js")
 
+        main
+            p Hola
+
+        footer.footer
+            a(href="AboutUs.html").footer__AboutUs #{footerText[0]}
+            a(href="#").footer__DerechosReservados #{footerText[1]}
+            section.footer__PlatziMaster
+                img(src="Assets/PlatziMaster.png", alt="Logo Platzi Master")
+                a(href="#").footer__PlatziMaster__Text #{footerText[2]}

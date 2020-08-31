@@ -181,3 +181,37 @@ body {
     display: block;
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(black, #44484b);
+  width: 100%;
+  max-width: 100%;
+  height: 70px;
+  font-size: calc(0.5em + 0.8vw);
+  padding: 20px;
+}
+@media only screen and (max-width: 700px) {
+  .footer {
+    font-size: calc(0.5em + 0.4vw);
+  }
+}
+.footer a {
+  color: white;
+}
+@media only screen and (max-width: 700px) {
+  .footer__DerechosReservados {
+    width: 40%;
+    text-align: center;
+  }
+}
+.footer img {
+  width: 5vmax;
+}
+.footer__PlatziMaster {
+  display: flex;
+  align-items: center;
+}
