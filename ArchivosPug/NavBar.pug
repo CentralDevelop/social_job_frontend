@@ -1,0 +1,20 @@
+header
+    nav.nav
+        img(src="Assets/Logo SocialJob.png", alt="Logo Social Job").nav__logo
+        ul.nav__enlaces
+            li 
+                a(href="Job.html") #{enlaces[0]}
+            li 
+                a(href="Published.html") #{enlaces[1]}
+            li 
+                a(href="AboutUs.html") #{enlaces[2]}
+            li 
+                a(href="SignIn.html").nav__enlaces--a1 #{botonesText[1]}
+                a(href="SignUp.html").nav__enlaces--a2 #{botonesText[2]}
+        section.nav__Button
+            a(href="SignIn.html").nav__Button--a1 #{botonesText[1]}
+            a(href="SignUp.html").nav__Button--a2 #{botonesText[2]}
+            i#burger-menu.burger-button
+                img(src="Assets/icon-hamburger.svg", alt="Abrir Menu Movil").Icono-burger
+                img(src="Assets/icon-close.svg", alt="Cerrar Menu Movil").Icono-close
+script(src="JS/index.js")
