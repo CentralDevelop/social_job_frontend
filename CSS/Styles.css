@@ -45,19 +45,57 @@ body {
 @media only screen and (max-width: 700px) {
   .nav__enlaces {
     display: block;
-    position: relative;
-    margin: 25px;
-    padding: 30px 0 15px 0;
-    width: 87%;
+    position: absolute;
+    padding: 20px 0 15px 0;
+    margin-left: 5%;
+    width: 90%;
+    height: 40vmax;
+    color: black;
     top: -100vh;
     text-align: center;
-    background-color: white;
-    border-radius: 5px;
-    transition: 0.5s;
+    background: linear-gradient(black, #44484b);
+    font-size: calc(1em + 1vw);
+    border-radius: 10px;
+    transition: 0.4s;
   }
 }
 .nav__enlaces.is-active {
-  top: 0;
+  top: 120px;
+}
+@media only screen and (max-width: 700px) {
+  .nav__enlaces li {
+    padding: 18px;
+  }
+}
+.nav__enlaces li .nav__enlaces--a1, .nav__enlaces li .nav__enlaces--a2 {
+  display: none;
+  margin: 0 35px;
+}
+@media only screen and (max-width: 700px) {
+  .nav__enlaces li .nav__enlaces--a1 {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    color: #baa27d;
+    background-color: linear-gradient(black, #44484b);
+    border: 3px solid #baa27d;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav__enlaces li .nav__enlaces--a2 {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    background-color: #297494;
+    border: 3px solid #baa27d;
+    text-align: center;
+    cursor: pointer;
+  }
 }
 .nav__enlaces a {
   color: white;
@@ -129,14 +167,14 @@ body {
 .nav__Button .burger-button .Icono-close {
   top: -100vw;
   position: relative;
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
 }
 .nav__Button .burger-button .Icono-close.is-active {
   display: block;
   position: relative;
-  right: 30px;
-  top: -55px;
+  top: -30px;
 }
 @media only screen and (max-width: 700px) {
   .nav__Button .burger-button {

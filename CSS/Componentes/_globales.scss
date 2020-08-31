@@ -68,20 +68,43 @@ body {
         width: 35vmax;
         @include media(mobile-only) {
             display: block;
-            position: relative;
-            margin: 25px;
-            padding: 30px 0 15px 0;
-            width: 87%;
+            position: absolute;
+            padding: 20px 0 15px 0;
+            margin-left: 5%;
+            width: 90%;
+            height: 40vmax;
+            color: black;
             top: -100vh;
             text-align: center;
-            background-color: $White;
-            border-radius: 5px;
-            transition: 0.5s;
+            background: $Color-BlackLinear;
+            font-size: calc(1em + 1vw);
+            border-radius: 10px;
+            transition: 0.4s;
         }
         &.is-active {
-            top: 0;
+            top: 120px;
         }
-
+        li {
+            @include media(mobile-only) {
+                padding: 18px;
+            }
+            .nav__enlaces--a1, .nav__enlaces--a2 {
+                display: none;
+                margin: 0 35px;
+            }
+            .nav__enlaces--a1 {
+                @include media(mobile-only) {
+                    display: inline-block;
+                    @include ButtonStyle(100px, 35px, $Dorado, $Color-BlackLinear, $Dorado);
+                }
+            }
+            .nav__enlaces--a2 {
+                @include media(mobile-only) {
+                    display: inline-block;
+                    @include ButtonStyle(100px, 35px, $White, $AzulPastel, $Dorado);
+                }
+            }
+        }
         a {
             color: $White;
             font-size: calc(0.7em + 0.8vw);
@@ -133,13 +156,13 @@ body {
             .Icono-close {
                 top: -100vw;
                 position: relative;
-                width: 22px;
-                height: 22px;
+                width: 30px;
+                height: 30px;
+                filter: invert(1);
                 &.is-active {
                     display: block;
                     position: relative;
-                    right: 30px;
-                    top: -55px;
+                    top: -30px;
                 }
             }
         }
