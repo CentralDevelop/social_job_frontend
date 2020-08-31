@@ -4,5 +4,13 @@ html(lang="en")
     include ArchivosPug/head.pug
     body
         header
-            h1 Bienvenidos a Social #{enlaces[0]}
-            a.boton Registro
+            nav
+                img(src="Assets/Logo SocialJob.png", alt="Logo Social Job")
+                ul
+                    li #{enlaces[0]}
+                    li #{enlaces[1]}
+                    li #{enlaces[2]}
+                section
+                    button #{botonesText[1]}
+                    button #{botonesText[2]}
+
