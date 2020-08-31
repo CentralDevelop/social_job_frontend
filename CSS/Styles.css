@@ -1,3 +1,5 @@
+/* Media Queries Mixin
+**********************/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 /*Paleta de Colores*/
 /*Font Family*/
@@ -31,14 +33,31 @@ body {
   background: linear-gradient(black, #44484b);
 }
 .nav__logo {
-  width: 230px;
-  height: 80px;
+  width: 14vmax;
+  height: 5vmax;
   cursor: pointer;
 }
 .nav__enlaces {
   display: flex;
   justify-content: space-between;
   width: 35vmax;
+}
+@media only screen and (max-width: 700px) {
+  .nav__enlaces {
+    display: block;
+    position: relative;
+    margin: 25px;
+    padding: 30px 0 15px 0;
+    width: 87%;
+    top: -100vh;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+}
+.nav__enlaces.is-active {
+  top: 0;
 }
 .nav__enlaces a {
   color: white;
@@ -49,6 +68,7 @@ body {
 }
 .nav__Button {
   padding: 10px;
+  /*Clase para controlar mi menu Burger*/
 }
 .nav__Button--a1 {
   display: Block;
@@ -62,6 +82,11 @@ body {
   text-align: center;
   cursor: pointer;
 }
+@media only screen and (max-width: 700px) {
+  .nav__Button--a1 {
+    display: none;
+  }
+}
 .nav__Button--a2 {
   display: Block;
   margin: 10px;
@@ -73,4 +98,48 @@ body {
   border: 3px solid #baa27d;
   text-align: center;
   cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .nav__Button--a2 {
+    display: none;
+  }
+}
+.nav__Button .burger-button {
+  display: none;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.nav__Button .burger-button img {
+  position: relative;
+}
+.nav__Button .burger-button .Icono-burger {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 0;
+  width: 30px;
+  height: 25px;
+  top: 0;
+  filter: invert(1);
+}
+.nav__Button .burger-button .Icono-burger.is-active {
+  position: relative;
+  top: -100vw;
+}
+.nav__Button .burger-button .Icono-close {
+  top: -100vw;
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+.nav__Button .burger-button .Icono-close.is-active {
+  display: block;
+  position: relative;
+  right: 30px;
+  top: -55px;
+}
+@media only screen and (max-width: 700px) {
+  .nav__Button .burger-button {
+    display: block;
+  }
 }
