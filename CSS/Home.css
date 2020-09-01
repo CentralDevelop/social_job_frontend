@@ -41,6 +41,7 @@ body {
   .main .Busqueda {
     height: 300px;
     width: 90vw;
+    border-radius: 25px;
   }
 }
 .main .Busqueda h1 {
@@ -271,10 +272,10 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  right: 50px;
+  right: 35px;
   width: 30px;
   height: 25px;
-  top: 30px;
+  top: 40px;
   filter: invert(1);
 }
 .nav__Button .burger-button .Icono-burger.is-active {
@@ -291,8 +292,8 @@ body {
 .nav__Button .burger-button .Icono-close.is-active {
   display: flex;
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 40px;
+  right: 35px;
 }
 @media only screen and (max-width: 700px) {
   .nav__Button .burger-button {
@@ -319,6 +320,7 @@ body {
   .main .Busqueda {
     height: 300px;
     width: 90vw;
+    border-radius: 25px;
   }
 }
 .main .Busqueda h1 {
@@ -425,10 +427,20 @@ body {
   grid-template-columns: 1fr 1fr;
   margin-top: 20px;
 }
+@media only screen and (max-width: 700px) {
+  .main .textHome {
+    display: block;
+  }
+}
 .main .textHome__Text h2 {
   width: 60%;
   margin: auto;
   font-size: calc(1.5em + 1.4vw);
+}
+@media only screen and (max-width: 700px) {
+  .main .textHome__Text h2 {
+    font-size: calc(1.1em + 1.3vw);
+  }
 }
 .main .textHome__Text a {
   display: block;
@@ -443,6 +455,12 @@ body {
   text-align: center;
   cursor: pointer;
 }
+@media only screen and (max-width: 700px) {
+  .main .textHome__Text a {
+    font-size: calc(0.8em + 1vw);
+    padding-top: 5px;
+  }
+}
 .main .textHome__Text a:hover, .main .textHome__Text a:focus {
   color: #baa27d;
   opacity: 0.9;
@@ -451,6 +469,10 @@ body {
   display: block;
   align-items: center;
   width: 80%;
+  margin: auto;
+}
+.main .textHome__image img {
+  width: 100%;
 }
 
 .footer {

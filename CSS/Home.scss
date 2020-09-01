@@ -17,17 +17,27 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 20px;
+        @include media(mobile-only){
+            display: block
+        }
         &__Text {
             h2 {
                 width: 60%;
                 margin: auto;
                 font-size: calc(1.5em + 1.4vw);
+                @include media(mobile-only){
+                    font-size: calc(1.1em + 1.3vw);
+                }
             }
             a {
                 display: block;
                 margin: 30px auto;
                 font-size: calc(0.7em + 0.6vw);
                 @include ButtonStyle(180px, 45px, $White, $AzulPastel, $AzulPastel);
+                @include media(mobile-only){
+                    font-size: calc(0.8em + 1vw);
+                    padding-top: 5px;
+                }
             }
             a:hover, a:focus {
                 color: $Dorado;
@@ -38,6 +48,10 @@
             display: block;
             align-items: center;
             width: 80%;
+            margin: auto;
+            img {
+                width: 100%;
+            }
         }
     }
 
