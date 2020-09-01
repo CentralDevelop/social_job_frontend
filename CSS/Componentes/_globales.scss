@@ -35,6 +35,18 @@ $font-family: 'Public Sans', sans-serif;
     border-radius: 15px;
 }
 
+@mixin ImageInputGoogle($width, $height, $marginTB) {
+    background-size: 25px;
+    display: flex;
+    align-items: center;
+    width: $width;
+    padding-left: 40px;
+    height: $height;
+    border-radius: 15px;
+    margin: $marginTB auto;
+}
+
+
 @mixin ButtonStyle($width, $height, $Color, $Bgcolor, $ColorBorde) {
     width:$width;
     height:$height;

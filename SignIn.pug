@@ -1,0 +1,29 @@
+include ArchivosPug/Configuraciones.pug
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="CSS/SingIn.css")
+        title Home
+    body
+        include ArchivosPug/NavBar.pug
+
+        main.main
+            article.article
+                img(src="Assets/SocialJobDark.png", alt="Logo Social Job del Formulario")
+            section.input 
+                div.input__icono--1
+                    input(type="text" name="input" placeholder="Google")
+                div.input__icono--2
+                    input(type="text" name="input" placeholder="User")
+                div.input__icono--3
+                    input(type="password" name="input" placeholder="Password")
+            section.buttonText
+                a(href="Jobs.html") #{botonesText[1]}
+            p
+                a(href="Password.html") I do not remember my password
+            p 
+                a(href="Registro.html") No yet a member? Sign Up
+
+        include ArchivosPug/Footer.pug
