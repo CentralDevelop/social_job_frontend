@@ -422,57 +422,164 @@ body {
     width: 95%;
   }
 }
-.main .textHome {
+.main .Cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 20px;
+  grid-template-columns: 30% 20% 50%;
+  margin: 20px auto;
+  box-shadow: 2px 5px 6px 3px #20212447;
+  background-color: #f2f2f2;
 }
-@media only screen and (max-width: 700px) {
-  .main .textHome {
-    display: block;
-  }
+.main .Cards__Graph {
+  width: 100%;
 }
-.main .textHome__Text h2 {
-  width: 60%;
+.main .Cards__Graph h1 {
+  font-size: calc(0.8em + 0.8vw);
+  font-weight: 600;
+  color: #297494;
+  width: 90%;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.main .Cards__Graph hr {
+  border: 1px solid #baa27d;
+  width: 90%;
   margin: auto;
-  font-size: calc(1.5em + 1.4vw);
 }
-@media only screen and (max-width: 700px) {
-  .main .textHome__Text h2 {
-    font-size: calc(1.1em + 1.3vw);
-  }
+.main .Cards__Graph__map {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
 }
-.main .textHome__Text a {
+.main .Cards__Graph__map img {
+  width: 25px;
+  height: 25px;
+  margin: auto 20px;
+}
+.main .Cards__Graph__map h3 {
+  font-size: calc(0.5em + 0.4vw);
+  color: #666666;
+  font-weight: 400;
+  width: 70%;
+  margin: 10px;
+}
+.main .Cards__Graph .buttonText {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 1%;
+  width: 100%;
+}
+.main .Cards__Graph .buttonText a {
   display: block;
-  margin: 30px auto;
-  font-size: calc(0.7em + 0.6vw);
-  width: 180px;
-  height: 45px;
+  margin: auto;
+  padding-top: 5px;
+  font-size: calc(0.5em + 0.5vw);
+  width: 10vmax;
+  height: 40px;
   border-radius: 20px;
   color: white;
-  background-color: #297494;
-  border: 3px solid #297494;
+  background-color: #baa27d;
+  border: 3px solid #baa27d;
   text-align: center;
   cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
-  .main .textHome__Text a {
-    font-size: calc(0.8em + 1vw);
-    padding-top: 5px;
+  .main .Cards__Graph .buttonText a {
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    background-color: #baa27d;
+    border: 3px solid #baa27d;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
   }
 }
-.main .textHome__Text a:hover, .main .textHome__Text a:focus {
-  color: #baa27d;
+.main .Cards__Graph .buttonText a:hover, .main .Cards__Graph .buttonText a:focus {
+  color: white;
   opacity: 0.9;
+  font-size: calc(0.6em + 0.7vw);
 }
-.main .textHome__image {
+.main .Cards__Graph .buttonSkils {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1%;
+  width: 100%;
+}
+.main .Cards__Graph .buttonSkils a {
   display: block;
-  align-items: center;
-  width: 80%;
+  margin: 15px 10px 15px;
+  padding-top: 5px;
+  font-size: calc(0.5em + 0.5vw);
+  width: 8vmax;
+  height: 40px;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .main .Cards__Graph .buttonSkils a {
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+}
+.main .Cards__Graph .buttonSkils a:hover, .main .Cards__Graph .buttonSkils a:focus {
+  color: black;
+  opacity: 0.9;
+  font-size: calc(0.6em + 0.6vw);
+}
+.main .Cards__Image {
+  display: flex;
+  flex-direction: column;
+}
+.main .Cards__Image img {
+  margin-top: 10px;
+  width: 130px;
+  height: 130px;
+}
+.main .Cards__Image h2 {
+  font-size: calc(0.6em + 0.6vw);
+  color: #666666;
+}
+.main .Cards__Image h3 {
+  font-size: calc(0.6em + 0.6vw);
+  color: #baa27d;
+  font-weight: 600;
+}
+.main .Cards__Image ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.main .Cards__Image li img {
+  width: 20px;
+  height: 20px;
+}
+.main .Cards__Text {
+  padding: 10px;
   margin: auto;
 }
-.main .textHome__image img {
-  width: 100%;
+.main .Cards__Text h1 {
+  font-size: calc(0.8em + 0.8vw);
+  text-align: justify;
+}
+.main .Cards__Text p {
+  font-size: calc(0.4em + 0.5vw);
+  font-weight: 200;
+  text-align: justify;
 }
 
 .footer {
