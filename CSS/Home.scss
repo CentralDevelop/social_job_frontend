@@ -1,0 +1,44 @@
+@import "Componentes/breakpoints";
+@import "Componentes/globales";
+@import "Componentes/NavBar";
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    @import "Componentes/Busqueda";
+    .textHome {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        &__Text {
+            h2 {
+                width: 60%;
+                margin: auto;
+                font-size: calc(1.5em + 1.4vw);
+            }
+            a {
+                display: block;
+                margin: 30px auto;
+                font-size: calc(0.7em + 0.6vw);
+                @include ButtonStyle(180px, 45px, $White, $AzulPastel, $AzulPastel);
+            }
+            a:hover, a:focus {
+                color: $Dorado;
+                opacity: 0.9;
+            }
+        }
+        &__image {
+            display: block;
+            align-items: center;
+            width: 80%;
+        }
+    }
+
+}
+
+
+@import "Componentes/Footer";

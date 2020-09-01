@@ -1,0 +1,54 @@
+.Busqueda {
+    background-image: url('/Assets/unsplash.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 40px;
+    height: 250px;
+    h1 {
+        color:$RosaPastel;
+        margin-top: 20px;
+        font-size: calc(1em + 1.1vw);
+        letter-spacing: 5px;
+    }
+    &__input{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        margin: 18px auto;
+        &__icono--1 {
+            background-image: url('/Assets/buscar.png');
+            background-repeat: no-repeat;
+            background-position: 4px center;
+            background-color: $White;
+            @include ImageInput();
+            input {
+                width: 96%;
+                height: 40px;
+            }
+        }
+        &__icono--2 {
+            background-image: url('/Assets/alfiler.png');
+            background-repeat: no-repeat;
+            background-position: 4px center;
+            background-size: 20px;
+            background-color: $White;
+            @include ImageInput();
+            input {
+                width: 96%;
+                height: 40px;
+            }
+        }
+    }
+    a {
+        display: block;
+        margin: 30px auto;
+        padding-top: 10px;
+        font-size: calc(0.7em + 0.6vw);
+        @include ButtonStyle(250px, 60px, $White, $AzulPastel, $AzulPastel);
+    }
+    a:hover, a:focus {
+        color: $Dorado;
+        opacity: 0.9;
+    }
+}

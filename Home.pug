@@ -5,7 +5,22 @@ html(lang="en")
     body
         include ArchivosPug/NavBar.pug
 
-        main
-            p Hola
+        main.main
+            section.Busqueda
+                h1 #{barraBusqueda}
+                section.Busqueda__input <!--Buscador de Google-->
+                    div.Busqueda__input__icono--1
+                        input(type="text" name="input" placeholder="Skils, salary, position")
+                    div.Busqueda__input__icono--2
+                        input(type="text" name="input" placeholder="Location, country")
+                a(href="AboutUs.html") #{botonesText[3]}
+            
+            section.textHome
+                article.textHome__Text
+                    h2 Find the best vacancies published on Social Jobs
+                    a(href="Jobs.html") #{botonesText[0]}
+                article.textHome__image
+                    img(src="Assets/Logo Black.png", alt="Logo Social Jobs Presentación")
+                    img(src="Assets/PersonsGroup.png", alt="Logo Personas Comunicandose")
 
         include ArchivosPug/Footer.pug
