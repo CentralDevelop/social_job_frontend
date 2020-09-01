@@ -1,0 +1,27 @@
+include ArchivosPug/Configuraciones.pug
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="CSS/SingUp.css")
+        title Sign Up
+    body
+        include ArchivosPug/NavBar.pug
+
+        main.main
+            article.article
+                img(src="Assets/CaptureSocialJob.png", alt="Logo Social Job del Formulario")
+                h2 Restore Password
+            section.input 
+                div.input__icono--1
+                    input(type="email" name="input" placeholder="Email" )
+            section.buttonText
+                a(href="Jobs.html") #{botonesText[1]}
+            section.EnlacesText
+                p
+                    a(href="Password.html") Log in
+                p 
+                    a(href="Registro.html") No yet a member? Sign Up
+
+        include ArchivosPug/Footer.pug
