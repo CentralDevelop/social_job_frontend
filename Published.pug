@@ -1,0 +1,52 @@
+include ArchivosPug/Configuraciones.pug
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="CSS/Published.css")
+        title About Us
+    body
+        include ArchivosPug/NavBar.pug
+
+        main.main
+            section.Banner
+                p Published
+                img(src="Assets/BannerPublished.png", alt="Banner Published")
+
+            section.published
+                section.published__image
+                    img(src="Assets/MovileSocialJobs.png", alt="Movil Social Jobs")
+                section.published__Text
+                    h1 Fil in the form to post a vacancy
+                    div.published__Text__Inputs
+                        label Position
+                        input(type="text" Placeholder="Position")
+                    div.published__Text__Inputs
+                        label Company
+                        input(type="text" Placeholder="Company")
+                    div.published__Text__Inputs
+                        label Salary
+                        input(type="text" Placeholder="Salary")
+                    div.published__Text__Inputs
+                        label Location
+                        input(type="text" Placeholder="Location")
+                    div.published__Text__Inputs
+                        label Job URL
+                        input(type="text" Placeholder="Job URL")
+                    div.published__Text__Inputs
+                        label Image URL
+                        input(type="text" Placeholder="Image URL")
+                    div.published__Text__Inputs
+                        label Description
+                        textarea(name="Description", cols="30", rows="5" Placeholder="Description")
+                    div.published__Text__Inputs
+                        label Skils
+                        input(type="text" Placeholder="Skills")
+                    section.buttonText
+                        a(href="Jobs.html") #{botonesText[7]}
+                    
+
+
+
+        include ArchivosPug/Footer.pug

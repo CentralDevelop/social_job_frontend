@@ -1,0 +1,33 @@
+include ArchivosPug/Configuraciones.pug
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="CSS/Registro.css")
+        title Register
+    body
+        include ArchivosPug/NavBar.pug
+
+        main.main
+            section.Card1
+                img(src="Assets/Capturecompu.png", alt="Laptop Social Jobs")
+                p The job of your dreams is here
+                span At Social Jobs we have a network of users who share the best vacancies for you.
+
+            section.Card2
+                section.input 
+                div.input__icono--1
+                    input(type="text" name="input" placeholder="Google")
+                div.input__icono--2
+                    input(type="text" name="input" placeholder="Full Name")
+                div.input__icono--3
+                    input(type="text" name="input" placeholder="User Name")
+                div.input__icono--4
+                    input(type="text" name="input" placeholder="Email")
+                div.input__icono--5
+                    input(type="password" name="input" placeholder="Password")
+                section.buttonText
+                    a(href="Jobs.html") #{botonesText[5]}
+
+        include ArchivosPug/Footer.pug
