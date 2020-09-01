@@ -310,6 +310,7 @@ body {
 }
 .main .Banner img {
   width: 100%;
+  height: 80%;
 }
 .main .Banner p {
   position: absolute;
@@ -317,7 +318,55 @@ body {
   font-size: calc(2.1em + 2.5vw);
   font-weight: 600;
   right: 0;
-  margin-top: 170px;
+  margin-top: 120px;
+}
+.main .history {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+.main .history__image img {
+  width: 35vmax;
+}
+.main .history__Text {
+  width: 80%;
+  margin-left: 40px;
+}
+.main .history__Text h1 {
+  font-size: calc(1.8em + 2vw);
+  font-weight: 600;
+}
+.main .history__Text p {
+  font-size: calc(0.8em + 0.7vw);
+}
+.main .valores {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.main .valores__imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto 70px;
+  width: 100%;
+}
+.main .valores__imagenes p {
+  font-size: calc(1em + 1.2vw);
+  font-weight: 600;
+}
+.main .valores__Text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.main .valores__Text p {
+  font-size: calc(0.5em + 0.5vw);
+  margin: auto 70px;
+  padding-bottom: 30px;
 }
 
 .footer {

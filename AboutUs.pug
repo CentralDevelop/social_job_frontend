@@ -14,19 +14,25 @@ html(lang="en")
                 p ABOUT US
                 img(src="Assets/BannerAbouUs.png", alt="Laptop Social Jobs")
 
-            section.Card2
-                section.input 
-                div.input__icono--1
-                    input(type="text" name="input" placeholder="Google")
-                div.input__icono--2
-                    input(type="text" name="input" placeholder="Full Name")
-                div.input__icono--3
-                    input(type="text" name="input" placeholder="User Name")
-                div.input__icono--4
-                    input(type="text" name="input" placeholder="Email")
-                div.input__icono--5
-                    input(type="password" name="input" placeholder="Password")
-                section.buttonText
-                    a(href="Jobs.html") #{botonesText[5]}
+            section.history
+                section.history__image
+                    img(src="Assets/Montview.png", alt="Laptop Social Jobs")
+                div.history__Text
+                    h1 Our History
+                    p We are a team of developers that belong to the Platzi Master program who are responsible for implementing, developing and supporting Social Job, a platform created in 2020 with the aim of creating a global community that allows sharing job vacancies and contributing to fight unemployment. and improve people's opportunities.
+
+            section.valores 
+                article.valores__imagenes
+                    div.valores__imagenes--1
+                        img(src="Assets/mision.webp", alt="Laptop Social Jobs")
+                        p Vision
+                    div.valores__imagenes--2
+                        img(src="Assets/vision.webp", alt="Laptop Social Jobs")
+                        p Mission
+                article.valores__Text
+                    p Our mission is to help combat the pandemic caused this year through a network of users who collaborate in the publication of job offers and thus combat unemployment.
+                    p Central Develop's vision is to make this platform the largest community in the world for the publication of job offers.
+
+
 
         include ArchivosPug/Footer.pug
