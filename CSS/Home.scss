@@ -10,6 +10,9 @@
     margin: auto;
     margin-top: 20px;
     @import "Componentes/Busqueda";
+    @include media(mobile-only){
+        width:95%;
+    }
     .textHome {
         display: grid;
         grid-template-columns: 1fr 1fr;

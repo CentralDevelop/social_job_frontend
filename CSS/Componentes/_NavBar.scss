@@ -5,18 +5,18 @@
         height: 5vmax;
         cursor: pointer;
     }
-
+    
     &__enlaces {
         display: flex;
         justify-content: space-between;
-        width: 35vmax;
+        width: 30vmax;
         @include media(mobile-only) {
             display: block;
             position: absolute;
             padding: 20px 0 15px 0;
             margin-left: 5%;
             width: 90%;
-            height: 40vmax;
+            height: 50vmax;
             color: black;
             top: -100vh;
             text-align: center;
@@ -40,6 +40,7 @@
                 @include media(mobile-only) {
                     display: inline-block;
                     @include ButtonStyle(100px, 35px, $Dorado, $Color-BlackLinear, $Dorado);
+                    margin-bottom: 15px;
                 }
             }
             .nav__enlaces--a2 {
@@ -86,14 +87,14 @@
             .Icono-burger{
                 display: flex;
                 align-items: center;
-                position: relative;
-                right: 0;
+                position: absolute;
+                right: 50px;
                 width: 30px;
                 height: 25px;
-                top: 0;
+                top: 30px;
                 filter: invert(1);
                 &.is-active {
-                    position: relative;
+                    position: absolute;
                     top: -100vw;
                 }
             }
@@ -104,9 +105,10 @@
                 height: 30px;
                 filter: invert(1);
                 &.is-active {
-                    display: block;
-                    position: relative;
-                    top: -30px;
+                    display: flex;
+                    position: absolute;
+                    top: 30px;
+                    right: 50px;
                 }
             }
         }
