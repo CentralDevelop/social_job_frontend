@@ -312,17 +312,19 @@ body {
 @media only screen and (max-width: 700px) {
   .main {
     width: 80%;
-    height: 580px;
+    height: 85%;
+    border-radius: 30px;
   }
 }
 .main .article {
-  margin-top: 100px;
+  margin-top: 15%;
 }
 .main .article img {
-  width: 300px;
+  width: 60%;
 }
 .main h2 {
   color: white;
+  font-size: calc(1em + 0.8vw);
 }
 .main .input {
   display: block;
@@ -396,8 +398,8 @@ body {
     height: 35px;
     border-radius: 20px;
     color: white;
-    background-color: #297494;
-    border: 3px solid #297494;
+    background-color: #ddcdb6;
+    border: 3px solid #ddcdb6;
     text-align: center;
     cursor: pointer;
     border-radius: 25px;
@@ -421,6 +423,11 @@ body {
 .main .EnlacesText p a {
   color: #baa27d;
   font-size: calc(0.5em + 0.6vw);
+}
+@media only screen and (max-width: 700px) {
+  .main .EnlacesText p a {
+    font-size: calc(0.7em + 0.9vw);
+  }
 }
 
 .footer {

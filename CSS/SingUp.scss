@@ -11,16 +11,18 @@
     margin-bottom: 70px;
     @include media(mobile-only) {
         width: 80%;
-        height: 580px;
+        height: 85%;
+        border-radius: 30px;
     }
     .article {
-        margin-top: 100px;
+        margin-top: 15%;
         img {
-            width: 300px;
+            width: 60%;
         }
     }
     h2 {
         color: $White;
+        font-size: calc(1em + 0.8vw);
     }
     .input{
         display: block;
@@ -58,11 +60,11 @@
         a {
             display: block;
             margin:auto;
-            padding-top: 5px;;
+            padding-top: 5px;
             font-size: calc(0.7em + 0.6vw);
             @include ButtonStyle(220px, 50px, $White, $DoradoPastel, $DoradoPastel);
             @include media(mobile-only) {
-                @include ButtonStyle(130px, 35px, $White, $AzulPastel, $AzulPastel);
+                @include ButtonStyle(130px, 35px, $White, $DoradoPastel, $DoradoPastel);
                 border-radius: 25px;
             }
         }
@@ -84,6 +86,9 @@
             a{
                 color: $Dorado;
                 font-size: calc(0.5em + 0.6vw);
+                @include media(mobile-only) {
+                    font-size: calc(0.7em + 0.9vw);
+                }
             }
         }
     }
