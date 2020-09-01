@@ -41,6 +41,7 @@ body {
   .main .Busqueda {
     height: 300px;
     width: 90vw;
+    border-radius: 25px;
   }
 }
 .main .Busqueda h1 {
@@ -298,6 +299,139 @@ body {
   .nav__Button .burger-button {
     display: block;
   }
+}
+
+.main {
+  display: block;
+  width: 540px;
+  height: 580px;
+  background: linear-gradient(black, #44484b);
+  border-radius: 80px;
+  margin-bottom: 20px;
+}
+.main .article {
+  margin-top: 100px;
+}
+.main .input {
+  display: block;
+  width: 85%;
+  margin: 18px auto;
+}
+@media only screen and (max-width: 700px) {
+  .main .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main .input__icono--1 {
+  background-image: url("/Assets/googleG.png");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-color: white;
+  margin: 0 5px;
+  background-size: 25px;
+  display: flex;
+  align-items: center;
+  width: 8vmax;
+  padding-left: 40px;
+  height: 40px;
+  border-radius: 15px;
+  margin: 22px auto;
+}
+.main .input__icono--1 input {
+  width: 90%;
+  height: 35px;
+}
+@media only screen and (max-width: 700px) {
+  .main .input__icono--1 {
+    margin-bottom: 20px;
+  }
+}
+.main .input__icono--2 {
+  background-image: url("/Assets/usuario.png");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 20px;
+  background-color: white;
+  margin: 0 5px;
+  background-size: 25px;
+  display: flex;
+  align-items: center;
+  width: 30vmax;
+  padding-left: 40px;
+  height: 50px;
+  border-radius: 15px;
+  margin: 22px auto;
+}
+.main .input__icono--2 input {
+  width: 96%;
+  height: 40px;
+}
+.main .input__icono--3 {
+  background-image: url("/Assets/llave.png");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 20px;
+  background-color: white;
+  margin: 0 5px;
+  background-size: 25px;
+  display: flex;
+  align-items: center;
+  width: 30vmax;
+  padding-left: 40px;
+  height: 50px;
+  border-radius: 15px;
+  margin: 22px auto;
+}
+.main .input__icono--3 input {
+  width: 96%;
+  height: 40px;
+}
+.main .buttonText {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+}
+.main .buttonText a {
+  display: block;
+  margin: auto;
+  padding-top: 5px;
+  font-size: calc(0.7em + 0.6vw);
+  width: 220px;
+  height: 50px;
+  border-radius: 20px;
+  color: white;
+  background-color: #297494;
+  border: 3px solid #297494;
+  text-align: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .main .buttonText a {
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    color: white;
+    background-color: #297494;
+    border: 3px solid #297494;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}
+.main .buttonText a:hover, .main .buttonText a:focus {
+  color: #baa27d;
+  opacity: 0.9;
+}
+.main p {
+  margin-top: 25px;
+}
+.main p a {
+  color: #baa27d;
+  font-size: calc(0.5em + 0.7vw);
 }
 
 .footer {
