@@ -9,6 +9,10 @@
     background: $Color-BlackLinear;
     border-radius: 80px;
     margin-bottom: 20px;
+    @include media(mobile-only) {
+        width: 80%;
+        height: 580px;
+    }
     .article {
         margin-top: 100px;
     }
@@ -21,6 +25,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: 0 auto;
         }
         &__icono--1 {
             background-image: url('/Assets/googleG.png');
@@ -34,7 +39,7 @@
                 height: 35px;
             }
             @include media(mobile-only) {
-                margin-bottom: 20px;
+                @include ImageInputGoogle(15vmax, 40px, 22px);
             }
         }
         &__icono--2 {
@@ -49,6 +54,9 @@
                 width: 96%;
                 height: 40px;
             }
+            @include media(mobile-only) {
+                @include ImageInputGoogle(28vmax, 45px, 22px);
+            }
         }
         &__icono--3 {
             background-image: url('/Assets/llave.png');
@@ -61,6 +69,9 @@
             input {
                 width: 96%;
                 height: 40px;
+            }
+            @include media(mobile-only) {
+                @include ImageInputGoogle(28vmax, 45px, 22px);
             }
         }
     }
@@ -76,8 +87,8 @@
             font-size: calc(0.7em + 0.6vw);
             @include ButtonStyle(220px, 50px, $White, $AzulPastel, $AzulPastel);
             @include media(mobile-only) {
-                @include ButtonStyle(200px, 45px, $White, $AzulPastel, $AzulPastel);
-                border-radius: 10px;
+                @include ButtonStyle(130px, 35px, $White, $AzulPastel, $AzulPastel);
+                border-radius: 25px;
             }
         }
         a:hover, a:focus {

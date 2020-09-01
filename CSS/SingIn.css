@@ -309,6 +309,12 @@ body {
   border-radius: 80px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 700px) {
+  .main {
+    width: 80%;
+    height: 580px;
+  }
+}
 .main .article {
   margin-top: 100px;
 }
@@ -323,6 +329,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 }
 .main .input__icono--1 {
@@ -346,7 +353,14 @@ body {
 }
 @media only screen and (max-width: 700px) {
   .main .input__icono--1 {
-    margin-bottom: 20px;
+    background-size: 25px;
+    display: flex;
+    align-items: center;
+    width: 15vmax;
+    padding-left: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin: 22px auto;
   }
 }
 .main .input__icono--2 {
@@ -369,6 +383,18 @@ body {
   width: 96%;
   height: 40px;
 }
+@media only screen and (max-width: 700px) {
+  .main .input__icono--2 {
+    background-size: 25px;
+    display: flex;
+    align-items: center;
+    width: 28vmax;
+    padding-left: 40px;
+    height: 45px;
+    border-radius: 15px;
+    margin: 22px auto;
+  }
+}
 .main .input__icono--3 {
   background-image: url("/Assets/llave.png");
   background-repeat: no-repeat;
@@ -388,6 +414,18 @@ body {
 .main .input__icono--3 input {
   width: 96%;
   height: 40px;
+}
+@media only screen and (max-width: 700px) {
+  .main .input__icono--3 {
+    background-size: 25px;
+    display: flex;
+    align-items: center;
+    width: 28vmax;
+    padding-left: 40px;
+    height: 45px;
+    border-radius: 15px;
+    margin: 22px auto;
+  }
 }
 .main .buttonText {
   display: flex;
@@ -411,15 +449,15 @@ body {
 }
 @media only screen and (max-width: 700px) {
   .main .buttonText a {
-    width: 200px;
-    height: 45px;
+    width: 130px;
+    height: 35px;
     border-radius: 20px;
     color: white;
     background-color: #297494;
     border: 3px solid #297494;
     text-align: center;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 25px;
   }
 }
 .main .buttonText a:hover, .main .buttonText a:focus {
