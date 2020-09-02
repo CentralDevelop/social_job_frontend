@@ -31,7 +31,7 @@ body {
   margin-top: 20px;
 }
 .main .Busqueda {
-  background-image: url("/Assets/unsplash.jpg");
+  background-image: url("../Assets/unsplash.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   border-radius: 40px;
@@ -66,7 +66,7 @@ body {
   }
 }
 .main .Busqueda__input__icono--1 {
-  background-image: url("/Assets/buscar.png");
+  background-image: url("../Assets/buscar.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-color: white;
@@ -89,7 +89,7 @@ body {
   }
 }
 .main .Busqueda__input__icono--2 {
-  background-image: url("/Assets/alfiler.png");
+  background-image: url("../Assets/alfiler.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: 20px;
@@ -381,7 +381,7 @@ body {
   }
 }
 .main .Card2 .input__icono--1 {
-  background-image: url("/Assets/googleG.png");
+  background-image: url("../Assets/googleG.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-color: white;
@@ -412,7 +412,7 @@ body {
   }
 }
 .main .Card2 .input__icono--2 {
-  background-image: url("/Assets/usuario.png");
+  background-image: url("../Assets/usuario.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: 20px;
@@ -443,7 +443,7 @@ body {
   }
 }
 .main .Card2 .input__icono--3 {
-  background-image: url("/Assets/credencial.png");
+  background-image: url("../Assets/credencial.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: 20px;
@@ -474,7 +474,7 @@ body {
   }
 }
 .main .Card2 .input__icono--4 {
-  background-image: url("/Assets/correo.png");
+  background-image: url("../Assets/correo.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: 20px;
@@ -505,7 +505,7 @@ body {
   }
 }
 .main .Card2 .input__icono--5 {
-  background-image: url("/Assets/llave.png");
+  background-image: url("../Assets/llave.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: 20px;
