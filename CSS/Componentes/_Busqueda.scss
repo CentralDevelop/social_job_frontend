@@ -1,5 +1,5 @@
 .Busqueda {
-    background-image: url('/Assets/unsplash.jpg');
+    background-image: url('../Assets/unsplash.jpg');
     background-repeat: no-repeat;
     object-fit: cover;
     border-radius: 40px;
@@ -28,7 +28,7 @@
             align-items: center;
         }
         &__icono--1 {
-            background-image: url('/Assets/buscar.png');
+            background-image: url('../Assets/buscar.png');
             background-repeat: no-repeat;
             background-position: 4px center;
             background-color: $White;
@@ -43,7 +43,7 @@
             }
         }
         &__icono--2 {
-            background-image: url('/Assets/alfiler.png');
+            background-image: url('../Assets/alfiler.png');
             background-repeat: no-repeat;
             background-position: 4px center;
             background-size: 20px;

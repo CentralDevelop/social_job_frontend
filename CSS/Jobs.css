@@ -31,7 +31,7 @@ body {
   margin-top: 20px;
 }
 .main .Busqueda {
-  background-image: url("/Assets/unsplash.jpg");
+  background-image: url("../Assets/unsplash.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   border-radius: 40px;
@@ -66,7 +66,7 @@ body {
   }
 }
 .main .Busqueda__input__icono--1 {
-  background-image: url("/Assets/buscar.png");
+  background-image: url("../Assets/buscar.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-color: white;
@@ -89,7 +89,7 @@ body {
   }
 }
 .main .Busqueda__input__icono--2 {
-  background-image: url("/Assets/alfiler.png");
+  background-image: url("../Assets/alfiler.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: 20px;
@@ -301,35 +301,27 @@ body {
   }
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-}
-.main .Busqueda {
-  background-image: url("/Assets/unsplash.jpg");
+.Busqueda {
+  background-image: url("../Assets/unsplash.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   border-radius: 40px;
   height: 250px;
 }
 @media only screen and (max-width: 700px) {
-  .main .Busqueda {
+  .Busqueda {
     height: 300px;
     width: 90vw;
     border-radius: 25px;
   }
 }
-.main .Busqueda h1 {
+.Busqueda h1 {
   color: #ddd4d4;
   margin-top: 20px;
   font-size: calc(1em + 1.1vw);
   letter-spacing: 5px;
 }
-.main .Busqueda__input {
+.Busqueda__input {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -337,15 +329,15 @@ body {
   margin: 18px auto;
 }
 @media only screen and (max-width: 700px) {
-  .main .Busqueda__input {
+  .Busqueda__input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-.main .Busqueda__input__icono--1 {
-  background-image: url("/Assets/buscar.png");
+.Busqueda__input__icono--1 {
+  background-image: url("../Assets/buscar.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-color: white;
@@ -358,17 +350,17 @@ body {
   height: 50px;
   border-radius: 15px;
 }
-.main .Busqueda__input__icono--1 input {
+.Busqueda__input__icono--1 input {
   width: 96%;
   height: 40px;
 }
 @media only screen and (max-width: 700px) {
-  .main .Busqueda__input__icono--1 {
+  .Busqueda__input__icono--1 {
     margin-bottom: 20px;
   }
 }
-.main .Busqueda__input__icono--2 {
-  background-image: url("/Assets/alfiler.png");
+.Busqueda__input__icono--2 {
+  background-image: url("../Assets/alfiler.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: 20px;
@@ -382,11 +374,11 @@ body {
   height: 50px;
   border-radius: 15px;
 }
-.main .Busqueda__input__icono--2 input {
+.Busqueda__input__icono--2 input {
   width: 96%;
   height: 40px;
 }
-.main .Busqueda a {
+.Busqueda a {
   display: block;
   margin: 30px auto;
   padding-top: 10px;
@@ -401,7 +393,7 @@ body {
   cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
-  .main .Busqueda a {
+  .Busqueda a {
     width: 200px;
     height: 45px;
     border-radius: 20px;
@@ -413,9 +405,18 @@ body {
     border-radius: 10px;
   }
 }
-.main .Busqueda a:hover, .main .Busqueda a:focus {
+.Busqueda a:hover, .Busqueda a:focus {
   color: #baa27d;
   opacity: 0.9;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 700px) {
   .main {
@@ -543,6 +544,7 @@ body {
 .main .Cards__Image {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .main .Cards__Image img {
   margin-top: 10px;

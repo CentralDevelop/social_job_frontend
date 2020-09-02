@@ -1,6 +1,7 @@
 @import "Componentes/breakpoints";
 @import "Componentes/globales";
 @import "Componentes/NavBar";
+@import "Componentes/Busqueda";
 
 .main {
     display: flex;
@@ -9,7 +10,6 @@
     width: 80%;
     margin: auto;
     margin-top: 20px;
-    @import "Componentes/Busqueda";
     @include media(mobile-only){
         width:95%;
     }
@@ -102,6 +102,7 @@
         &__Image {
             display: flex;
             flex-direction: column; 
+            margin: 0 auto;
             img {
                 margin-top: 10px;
                 width: 130px;
