@@ -452,7 +452,7 @@ body {
   width: 100%;
 }
 .main .Cards__Graph h1 {
-  font-size: calc(0.8em + 0.8vw);
+  font-size: calc(0.8em + 0.7vw);
   font-weight: 600;
   color: #297494;
   width: 90%;
@@ -473,7 +473,7 @@ body {
 .main .Cards__Graph__map {
   display: flex;
   width: 80%;
-  margin: 20px auto;
+  margin: 8% auto;
 }
 .main .Cards__Graph__map img {
   width: 25px;
@@ -484,8 +484,7 @@ body {
   font-size: calc(0.5em + 0.4vw);
   color: #666666;
   font-weight: 400;
-  width: 70%;
-  margin: 10px;
+  width: 100%;
 }
 @media only screen and (max-width: 700px) {
   .main .Cards__Graph__map h3 {
@@ -503,10 +502,10 @@ body {
 .main .Cards__Graph .buttonText a {
   display: block;
   margin: auto;
-  padding-top: 5px;
-  font-size: calc(0.5em + 0.5vw);
-  width: 10vmax;
-  height: 40px;
+  padding-top: 4px;
+  font-size: calc(0.6em + 0.5vw);
+  width: 9vmax;
+  height: 2.5vmax;
   border-radius: 20px;
   color: white;
   background-color: #baa27d;
@@ -544,9 +543,9 @@ body {
   display: block;
   margin: 15px 10px 15px;
   padding-top: 5px;
-  font-size: calc(0.5em + 0.5vw);
-  width: 8vmax;
-  height: 40px;
+  font-size: calc(0.4em + 0.5vw);
+  width: 7vmax;
+  height: 2.5vmax;
   border-radius: 20px;
   color: black;
   background-color: white;
@@ -565,12 +564,13 @@ body {
     text-align: center;
     cursor: pointer;
     border-radius: 25px;
+    font-size: calc(0.5em + 0.5vw);
   }
 }
 .main .Cards__Graph .buttonSkils a:hover, .main .Cards__Graph .buttonSkils a:focus {
   color: black;
   opacity: 0.9;
-  font-size: calc(0.6em + 0.8vw);
+  font-size: calc(0.6em + 0.5vw);
 }
 .main .Cards__Image {
   display: flex;
@@ -579,8 +579,8 @@ body {
 }
 .main .Cards__Image img {
   margin-top: 10px;
-  width: 130px;
-  height: 130px;
+  width: 11vmax;
+  height: 11vmax;
 }
 @media only screen and (max-width: 700px) {
   .main .Cards__Image img {
@@ -592,10 +592,20 @@ body {
   font-size: calc(0.6em + 0.6vw);
   color: #666666;
 }
+@media only screen and (max-width: 700px) {
+  .main .Cards__Image h2 {
+    font-size: calc(0.8em + 1vw);
+  }
+}
 .main .Cards__Image h3 {
   font-size: calc(0.6em + 0.6vw);
   color: #baa27d;
   font-weight: 600;
+}
+@media only screen and (max-width: 700px) {
+  .main .Cards__Image h3 {
+    font-size: calc(0.8em + 1vw);
+  }
 }
 .main .Cards__Image ul {
   list-style: none;
@@ -617,7 +627,7 @@ body {
   }
 }
 .main .Cards__Text h1 {
-  font-size: calc(0.8em + 0.8vw);
+  font-size: calc(0.9em + 0.8vw);
   text-align: justify;
 }
 @media only screen and (max-width: 700px) {
@@ -626,7 +636,7 @@ body {
   }
 }
 .main .Cards__Text p {
-  font-size: calc(0.4em + 0.5vw);
+  font-size: calc(0.45em + 0.5vw);
   font-weight: 200;
   text-align: justify;
 }
