@@ -31,14 +31,16 @@ body {
   margin-top: 20px;
 }
 .main .Busqueda {
-  background-image: url("../Assets/unsplash.jpg");
+  background-image: url("../Assets/roca.jpg");
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: 100%;
+  object-fit: contain;
   border-radius: 40px;
   height: 250px;
 }
 @media only screen and (max-width: 700px) {
   .main .Busqueda {
+    background-size: 500px;
     height: 300px;
     width: 90vw;
     border-radius: 25px;
@@ -82,6 +84,8 @@ body {
 .main .Busqueda__input__icono--1 input {
   width: 96%;
   height: 40px;
+  border: 0;
+  outline: none;
 }
 @media only screen and (max-width: 700px) {
   .main .Busqueda__input__icono--1 {
@@ -106,6 +110,8 @@ body {
 .main .Busqueda__input__icono--2 input {
   width: 96%;
   height: 40px;
+  border: 0;
+  outline: none;
 }
 .main .Busqueda a {
   display: block;
@@ -302,14 +308,16 @@ body {
 }
 
 .Busqueda {
-  background-image: url("../Assets/unsplash.jpg");
+  background-image: url("../Assets/roca.jpg");
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: 100%;
+  object-fit: contain;
   border-radius: 40px;
   height: 250px;
 }
 @media only screen and (max-width: 700px) {
   .Busqueda {
+    background-size: 500px;
     height: 300px;
     width: 90vw;
     border-radius: 25px;
@@ -353,6 +361,8 @@ body {
 .Busqueda__input__icono--1 input {
   width: 96%;
   height: 40px;
+  border: 0;
+  outline: none;
 }
 @media only screen and (max-width: 700px) {
   .Busqueda__input__icono--1 {
@@ -377,6 +387,8 @@ body {
 .Busqueda__input__icono--2 input {
   width: 96%;
   height: 40px;
+  border: 0;
+  outline: none;
 }
 .Busqueda a {
   display: block;
@@ -420,26 +432,38 @@ body {
 }
 @media only screen and (max-width: 700px) {
   .main {
-    width: 95%;
+    width: 90%;
   }
 }
 .main .Cards {
   display: grid;
-  grid-template-columns: 30% 20% 50%;
+  grid-template-columns: 30% 20% 48%;
   margin: 20px auto;
   box-shadow: 2px 5px 6px 3px #20212447;
   background-color: #f2f2f2;
+}
+@media only screen and (max-width: 700px) {
+  .main .Cards {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .main .Cards__Graph {
   width: 100%;
 }
 .main .Cards__Graph h1 {
-  font-size: calc(0.8em + 0.8vw);
+  font-size: calc(0.8em + 0.7vw);
   font-weight: 600;
   color: #297494;
   width: 90%;
   margin: 10px;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 700px) {
+  .main .Cards__Graph h1 {
+    font-size: calc(1em + 1vw);
+    margin: 20px;
+  }
 }
 .main .Cards__Graph hr {
   border: 1px solid #baa27d;
@@ -449,7 +473,7 @@ body {
 .main .Cards__Graph__map {
   display: flex;
   width: 80%;
-  margin: 20px auto;
+  margin: 8% auto;
 }
 .main .Cards__Graph__map img {
   width: 25px;
@@ -460,8 +484,13 @@ body {
   font-size: calc(0.5em + 0.4vw);
   color: #666666;
   font-weight: 400;
-  width: 70%;
-  margin: 10px;
+  width: 100%;
+}
+@media only screen and (max-width: 700px) {
+  .main .Cards__Graph__map h3 {
+    font-size: calc(0.6em + 0.7vw);
+    margin: 0px;
+  }
 }
 .main .Cards__Graph .buttonText {
   display: flex;
@@ -473,10 +502,10 @@ body {
 .main .Cards__Graph .buttonText a {
   display: block;
   margin: auto;
-  padding-top: 5px;
-  font-size: calc(0.5em + 0.5vw);
-  width: 10vmax;
-  height: 40px;
+  padding-top: 4px;
+  font-size: calc(0.6em + 0.5vw);
+  width: 9vmax;
+  height: 2.5vmax;
   border-radius: 20px;
   color: white;
   background-color: #baa27d;
@@ -486,7 +515,7 @@ body {
 }
 @media only screen and (max-width: 700px) {
   .main .Cards__Graph .buttonText a {
-    width: 130px;
+    width: 110px;
     height: 35px;
     border-radius: 20px;
     color: white;
@@ -495,6 +524,7 @@ body {
     text-align: center;
     cursor: pointer;
     border-radius: 25px;
+    font-size: calc(0.7em + 0.7vw);
   }
 }
 .main .Cards__Graph .buttonText a:hover, .main .Cards__Graph .buttonText a:focus {
@@ -513,9 +543,9 @@ body {
   display: block;
   margin: 15px 10px 15px;
   padding-top: 5px;
-  font-size: calc(0.5em + 0.5vw);
-  width: 8vmax;
-  height: 40px;
+  font-size: calc(0.4em + 0.5vw);
+  width: 7vmax;
+  height: 2.5vmax;
   border-radius: 20px;
   color: black;
   background-color: white;
@@ -525,7 +555,7 @@ body {
 }
 @media only screen and (max-width: 700px) {
   .main .Cards__Graph .buttonSkils a {
-    width: 130px;
+    width: 90px;
     height: 35px;
     border-radius: 20px;
     color: black;
@@ -534,12 +564,13 @@ body {
     text-align: center;
     cursor: pointer;
     border-radius: 25px;
+    font-size: calc(0.5em + 0.5vw);
   }
 }
 .main .Cards__Graph .buttonSkils a:hover, .main .Cards__Graph .buttonSkils a:focus {
   color: black;
   opacity: 0.9;
-  font-size: calc(0.6em + 0.6vw);
+  font-size: calc(0.6em + 0.5vw);
 }
 .main .Cards__Image {
   display: flex;
@@ -548,17 +579,33 @@ body {
 }
 .main .Cards__Image img {
   margin-top: 10px;
-  width: 130px;
-  height: 130px;
+  width: 11vmax;
+  height: 11vmax;
+}
+@media only screen and (max-width: 700px) {
+  .main .Cards__Image img {
+    width: 100px;
+    height: 100px;
+  }
 }
 .main .Cards__Image h2 {
   font-size: calc(0.6em + 0.6vw);
   color: #666666;
 }
+@media only screen and (max-width: 700px) {
+  .main .Cards__Image h2 {
+    font-size: calc(0.8em + 1vw);
+  }
+}
 .main .Cards__Image h3 {
   font-size: calc(0.6em + 0.6vw);
   color: #baa27d;
   font-weight: 600;
+}
+@media only screen and (max-width: 700px) {
+  .main .Cards__Image h3 {
+    font-size: calc(0.8em + 1vw);
+  }
 }
 .main .Cards__Image ul {
   list-style: none;
@@ -574,14 +621,29 @@ body {
   padding: 10px;
   margin: auto;
 }
+@media only screen and (max-width: 700px) {
+  .main .Cards__Text {
+    padding: 20px;
+  }
+}
 .main .Cards__Text h1 {
-  font-size: calc(0.8em + 0.8vw);
+  font-size: calc(0.9em + 0.8vw);
   text-align: justify;
 }
+@media only screen and (max-width: 700px) {
+  .main .Cards__Text h1 {
+    font-size: calc(1em + 1vw);
+  }
+}
 .main .Cards__Text p {
-  font-size: calc(0.4em + 0.5vw);
+  font-size: calc(0.45em + 0.5vw);
   font-weight: 200;
   text-align: justify;
+}
+@media only screen and (max-width: 700px) {
+  .main .Cards__Text p {
+    font-size: calc(0.6em + 0.7vw);
+  }
 }
 
 .footer {

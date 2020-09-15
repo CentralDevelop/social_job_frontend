@@ -31,14 +31,16 @@ body {
   margin-top: 20px;
 }
 .main .Busqueda {
-  background-image: url("../Assets/unsplash.jpg");
+  background-image: url("../Assets/roca.jpg");
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: 100%;
+  object-fit: contain;
   border-radius: 40px;
   height: 250px;
 }
 @media only screen and (max-width: 700px) {
   .main .Busqueda {
+    background-size: 500px;
     height: 300px;
     width: 90vw;
     border-radius: 25px;
@@ -82,6 +84,8 @@ body {
 .main .Busqueda__input__icono--1 input {
   width: 96%;
   height: 40px;
+  border: 0;
+  outline: none;
 }
 @media only screen and (max-width: 700px) {
   .main .Busqueda__input__icono--1 {
@@ -106,6 +110,8 @@ body {
 .main .Busqueda__input__icono--2 input {
   width: 96%;
   height: 40px;
+  border: 0;
+  outline: none;
 }
 .main .Busqueda a {
   display: block;
@@ -302,14 +308,16 @@ body {
 }
 
 .Busqueda {
-  background-image: url("../Assets/unsplash.jpg");
+  background-image: url("../Assets/roca.jpg");
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: 100%;
+  object-fit: contain;
   border-radius: 40px;
   height: 250px;
 }
 @media only screen and (max-width: 700px) {
   .Busqueda {
+    background-size: 500px;
     height: 300px;
     width: 90vw;
     border-radius: 25px;
@@ -353,6 +361,8 @@ body {
 .Busqueda__input__icono--1 input {
   width: 96%;
   height: 40px;
+  border: 0;
+  outline: none;
 }
 @media only screen and (max-width: 700px) {
   .Busqueda__input__icono--1 {
@@ -377,6 +387,8 @@ body {
 .Busqueda__input__icono--2 input {
   width: 96%;
   height: 40px;
+  border: 0;
+  outline: none;
 }
 .Busqueda a {
   display: block;
