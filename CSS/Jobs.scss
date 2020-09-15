@@ -11,14 +11,18 @@
     margin: auto;
     margin-top: 20px;
     @include media(mobile-only){
-        width:95%;
+        width:90%;
     }
     .Cards {
         display: grid;
-        grid-template-columns: 30% 20% 50%;
+        grid-template-columns: 30% 20% 48%;
         margin: 20px auto;
         box-shadow: 2px 5px 6px 3px #20212447;
-        background-color: $GrisPastel;  
+        background-color: $GrisPastel; 
+        @include media(mobile-only){
+            display: flex;
+            flex-direction: column;
+        }
         &__Graph {
             width: 100%;
             h1 {
@@ -28,6 +32,10 @@
                 width: 90%;
                 margin: 10px;
                 text-transform: uppercase;
+                @include media(mobile-only){
+                    font-size: calc(1em + 1vw);
+                    margin: 20px;
+                }
             }
             hr {
                 border:1px solid $Dorado;
@@ -49,6 +57,10 @@
                     font-weight: $font-weight2; 
                     width: 70%;
                     margin: 10px;
+                    @include media(mobile-only){
+                        font-size: calc(0.6em + 0.7vw);
+                        margin: 0px;
+                    }
                 }
             }
             .buttonText{
@@ -64,8 +76,9 @@
                     font-size: calc(0.5em + 0.5vw);
                     @include ButtonStyle(10vmax, 40px, $White, $Dorado, $Dorado);
                     @include media(mobile-only) {
-                        @include ButtonStyle(130px, 35px, $White, $Dorado, $Dorado);
+                        @include ButtonStyle(110px, 35px, $White, $Dorado, $Dorado);
                         border-radius: 25px;
+                        font-size: calc(0.7em + 0.7vw);
                     }
                 }
                 a:hover, a:focus {
@@ -87,14 +100,14 @@
                     font-size: calc(0.5em + 0.5vw);
                     @include ButtonStyle(8vmax, 40px, $Negro, $White, $Negro);
                     @include media(mobile-only) {
-                        @include ButtonStyle(130px, 35px, $Negro, $White, $Negro);
+                        @include ButtonStyle(90px, 35px, $Negro, $White, $Negro);
                         border-radius: 25px;
                     }
                 }
                 a:hover, a:focus {
                     color: $Negro;
                     opacity: 0.9;
-                    font-size: calc(0.6em + 0.6vw);
+                    font-size: calc(0.6em + 0.8vw);
                 }
             }
         }
@@ -107,6 +120,10 @@
                 margin-top: 10px;
                 width: 130px;
                 height: 130px;
+                @include media(mobile-only){
+                    width: 100px;
+                    height: 100px;
+                }
             }
             h2 {
                 font-size: calc(0.6em + 0.6vw);
@@ -134,14 +151,23 @@
         &__Text {
             padding: 10px;
             margin: auto;
+            @include media(mobile-only) {
+                padding: 20px;
+            }
             h1 {
                 font-size: calc(0.8em + 0.8vw);
                 text-align: justify;
+                @include media(mobile-only){
+                    font-size: calc(1em + 1vw);
+                }
             }
             p {
                 font-size: calc(0.4em + 0.5vw);
                 font-weight: $font-weight1;
                 text-align: justify;
+                @include media(mobile-only){
+                    font-size: calc(0.6em + 0.7vw);
+                }
             }
         }
     }
