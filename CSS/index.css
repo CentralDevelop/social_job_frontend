@@ -31,9 +31,10 @@ body {
   margin-top: 20px;
 }
 .main .Busqueda {
-  background-image: url("../Assets/unsplash.jpg");
+  background-image: url("../Assets/rocas.PNG");
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: 100%;
+  object-fit: contain;
   border-radius: 40px;
   height: 250px;
 }
@@ -302,9 +303,10 @@ body {
 }
 
 .Busqueda {
-  background-image: url("../Assets/unsplash.jpg");
+  background-image: url("../Assets/rocas.PNG");
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: 100%;
+  object-fit: contain;
   border-radius: 40px;
   height: 250px;
 }
