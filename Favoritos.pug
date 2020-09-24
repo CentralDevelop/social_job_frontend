@@ -1,0 +1,114 @@
+include ArchivosPug/Configuraciones.pug
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="CSS/index.css")
+        link(rel="stylesheet", href="CSS/Jobs.css")
+        link(rel="stylesheet", href="CSS/Favoritos.css")
+        title Favoritos
+    body
+        include ArchivosPug/NavBar.pug
+
+        main.main
+            section.main__fav
+                button.main__fav--regresar
+                h2.main__fav--titulo Favorites
+
+            section.Cards
+                article.Cards__Graph
+                    h1 DESARROLLADOR WEB FULL STACK
+                    hr  
+                    div.Cards__Graph__map
+                        img(src="Assets/ubicacion.png", alt="Imagen Maps")
+                        h3 Ciudad de México, Distrito Federal, México
+                    section.buttonText
+                        a(href="Jobs.html") #{botonesText[6]}
+                    section.buttonSkils
+                        div.buttonSkils--1
+                            a JavaScript
+                            a GraphQL
+                        div.buttonSkils--2
+                            a Phyton
+                            a ReactJS
+                article.Cards__Image
+                    img(src="Assets/Elektra.png", alt="Logo Empresa")
+                    h2 Elektra
+                    ul 
+                        li 
+                            img(src="Assets/Start1.png", alt="Estrellas")
+                        li 
+                            img(src="Assets/Start1.png", alt="Estrellas")
+                        li 
+                            img(src="Assets/Start1.png", alt="Estrellas")
+                        li 
+                            img(src="Assets/Start1.png", alt="Estrellas")
+                        li 
+                            img(src="Assets/Start2.png", alt="Estrellas")
+                    h3 $25, 000
+
+                article.Cards__Text
+                    h1 Description
+                    p 
+                        | Advancio is a global software company that’s growing every day and we are looking for talented and passionate people who wish to be an integral part of our team.
+                        | We are passionate about technology and the power it has to change the world, we are building a company where we love what we do, we collaborate positively with our customers and we have fun while we work!
+                        | If you have the following requirements you're ready to join our team! <br>
+                        | Core Responsibilities.<br>
+                        | Develop software with high autonomy, pairing when appropriate.
+                        | Work with QA to write unit tests, UI tests and integration tests to prove your code works.
+                        | Communicate effectively, especially when shaping the direction our technology should take.<br>
+                        | Requirements<br>
+                        | Conversational English.<br>
+                        | 2+ Experience in Languages: C#, HTML/CSS/JavaScript.<br>
+                        | Experience Third-party products: Newtonsoft JSON.NET.<br>
+                        | Experience Frameworks: .NET, LINQ, Entity Framework, Angular.<br>
+                        | Experience Systems Automation: Azure DevOps.<br>
+
+            section.Cards
+                article.Cards__Graph
+                    h1 JAVA DEVELOPER
+                    hr  
+                    div.Cards__Graph__map
+                        img(src="Assets/ubicacion.png", alt="Imagen Maps")
+                        h3 Guadalajara, México
+                    section.buttonText
+                        a(href="Jobs.html") #{botonesText[6]}
+                    section.buttonSkils
+                        div.buttonSkils--1
+                            a JAVA
+                            a POO
+                        div.buttonSkils--2
+                            a C++
+                            a MySQL
+                article.Cards__Image
+                    img(src="Assets/ibm.png", alt="Logo Empresa")
+                    h2 IBM
+                    ul 
+                        li 
+                            img(src="Assets/Start1.png", alt="Estrellas")
+                        li 
+                            img(src="Assets/Start1.png", alt="Estrellas")
+                        li 
+                            img(src="Assets/Start1.png", alt="Estrellas")
+                        li 
+                            img(src="Assets/Start1.png", alt="Estrellas")
+                        li 
+                            img(src="Assets/Start2.png", alt="Estrellas")
+                    h3 $22, 000
+
+                article.Cards__Text
+                    h1 Description
+                    p 
+                        | If you are a Software Engineer - C#.NET with experience, and authorized to work in Mexico, please read on!
+                        | Top Reasons to Work with Us<br>
+                        | Please do not apply if you don't already have current work authorization to work in Mexico.
+                        | Outstanding leadership, team and company based in USA.<br>
+                        | Required Technical and Professional Expertise
+                        | At least 1 year of experience in solution programming. School projects counts as experience.
+                        | Knowledge: Programming languages C++ and Java<br>
+                        | Fluent English<br>
+                        | Preferred Technical And Professional Expertise<br>
+                        | Python, R, Visual Basic<br>
+                        | About Business Unit<br>
+
+        include ArchivosPug/Footer.pug

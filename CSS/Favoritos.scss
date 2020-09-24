@@ -1,0 +1,23 @@
+@import "Componentes/breakpoints";
+@import "Componentes/globales";
+@import "Componentes/NavBar";
+@import "Componentes/Busqueda";
+
+.main__fav {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &--titulo {
+        color: $AzulPastel;
+    }
+    &--regresar {
+        width: 60px;
+        height: 50px;
+        background-color: white;
+        background-image: url('/Assets/short_left.png');
+        background-size: cover;
+        position: absolute;
+        left: 1%;
+    }
+}
