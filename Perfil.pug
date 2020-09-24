@@ -10,29 +10,63 @@ html(lang="en")
 
         main.container
             section.perfil
-                figure.perfil__img: img(src="", alt="Foto de perfil")
+                button.perfil__editar
+                figure.perfil__img: img(src="/Assets/fotoPrueba.jpg", alt="Foto de perfil")
                 p.perfil__datos--nombre Luis Orlando Castañeda
                 p.perfil__datos--edad 25 años
                 p.perfil__datos--locacion Tonalá, Jalisco
                 .perfil__profesion
                     p.perfil__profesion-titulo Ingeniero en computacion 
             
+            .favoritos
+                button.favoritos__boton Favorite Jobs
+            
             section.info-general
-                h3.info-general__titulo
-                .info_general__container
-                    p.info-general__campo.nombre  Nombre(s)
-                    p.info-general__campo.nombre  Orlando
-                    p.info-general__campo.nombre  Apellido Paterno
-                    p.info-general__campo.nombre  Castañeda
-                    p.info-general__campo.nombre  Apellido Materno
-                    p.info-general__campo.nombre  Lopez
+                button.info-general__editar
+                h3.info-general__titulo Información General
+                .info-general__container
+                    .info-general__container--personal
+                        p.nombreTitulo  Nombre(s)
+                        p.apellidoPTitulo  Apellido Paterno
+                        p.apellidoMTitulo  Apellido Materno
+                        p.nombre Orlando
+                        p.apellidoP Castañeda
+                        p.apellidoM Lopez
+                    .info-general__container--usuario
+                        p.usuarioTitulo  Usuario
+                        p.correoTitulo  Correo
+                        p.contrasenaTitulo  Contraseña
+                        p.usuario  Orla123
+                        p.correo  Orla@test.com
+                        p.contrasena  *******
 
             section.vacantes
-                h3.vacantes__titulo
+                h3.vacantes__titulo Vacantes
                 .vacantes__container
                     .vacantes__container--vacante
                         p Desarrollador Web Full Stack
-                        figure: img(src="", alt="editar")
+                        button.editar
+                        button.borrar
+                        //- figure: img(src="", alt="editar")
+                    .vacantes__container--vacante
+                        p Desarrollador Web Full Stack
+                        button.editar
+                        button.borrar
+            
+                    .vacantes__container--vacante
+                        p Desarrollador Web Full Stack
+                        button.editar
+                        button.borrar
+                
+                    .vacantes__container--vacante
+                        p Desarrollador Web Full Stack
+                        button.editar
+                        button.borrar
+            
+                    .vacantes__container--vacante
+                        p Desarrollador Web Full Stack
+                        button.editar
+                        button.borrar
 
 
         include ArchivosPug/Footer.pug

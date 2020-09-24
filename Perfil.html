@@ -20,7 +20,8 @@
     <script src="JS/index.js"></script>
     <main class="container">
       <section class="perfil">
-        <figure class="perfil__img"><img src="" alt="Foto de perfil"/></figure>
+        <button class="perfil__editar"></button>
+        <figure class="perfil__img"><img src="/Assets/fotoPrueba.jpg" alt="Foto de perfil"/></figure>
         <p class="perfil__datos--nombre">Luis Orlando Castañeda</p>
         <p class="perfil__datos--edad">25 años</p>
         <p class="perfil__datos--locacion">Tonalá, Jalisco</p>
@@ -28,23 +29,58 @@
           <p class="perfil__profesion-titulo">Ingeniero en computacion </p>
         </div>
       </section>
+      <div class="favoritos">
+        <button class="favoritos__boton">Favorite Jobs</button>
+      </div>
       <section class="info-general">
-        <h3 class="info-general__titulo"></h3>
-        <div class="info_general__container">
-          <p class="info-general__campo nombre"> Nombre(s)</p>
-          <p class="info-general__campo nombre"> Orlando</p>
-          <p class="info-general__campo nombre"> Apellido Paterno</p>
-          <p class="info-general__campo nombre"> Castañeda</p>
-          <p class="info-general__campo nombre"> Apellido Materno</p>
-          <p class="info-general__campo nombre"> Lopez</p>
+        <button class="info-general__editar"></button>
+        <h3 class="info-general__titulo">Información General</h3>
+        <div class="info-general__container">
+          <div class="info-general__container--personal">
+            <p class="nombreTitulo"> Nombre(s)</p>
+            <p class="apellidoPTitulo"> Apellido Paterno</p>
+            <p class="apellidoMTitulo"> Apellido Materno</p>
+            <p class="nombre">Orlando</p>
+            <p class="apellidoP">Castañeda</p>
+            <p class="apellidoM">Lopez</p>
+          </div>
+          <div class="info-general__container--usuario">
+            <p class="usuarioTitulo"> Usuario</p>
+            <p class="correoTitulo"> Correo</p>
+            <p class="contrasenaTitulo"> Contraseña</p>
+            <p class="usuario"> Orla123</p>
+            <p class="correo"> Orla@test.com</p>
+            <p class="contrasena"> *******</p>
+          </div>
         </div>
       </section>
       <section class="vacantes">
-        <h3 class="vacantes__titulo"></h3>
+        <h3 class="vacantes__titulo">Vacantes</h3>
         <div class="vacantes__container">
           <div class="vacantes__container--vacante">
             <p>Desarrollador Web Full Stack</p>
-            <figure><img src="" alt="editar"/></figure>
+            <button class="editar"></button>
+            <button class="borrar"></button>
+          </div>
+          <div class="vacantes__container--vacante">
+            <p>Desarrollador Web Full Stack</p>
+            <button class="editar"></button>
+            <button class="borrar"></button>
+          </div>
+          <div class="vacantes__container--vacante">
+            <p>Desarrollador Web Full Stack</p>
+            <button class="editar"></button>
+            <button class="borrar"></button>
+          </div>
+          <div class="vacantes__container--vacante">
+            <p>Desarrollador Web Full Stack</p>
+            <button class="editar"></button>
+            <button class="borrar"></button>
+          </div>
+          <div class="vacantes__container--vacante">
+            <p>Desarrollador Web Full Stack</p>
+            <button class="editar"></button>
+            <button class="borrar"></button>
           </div>
         </div>
       </section>
